@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "target": "esnext",
+    "skipLibCheck": true,
+    "outDir": "./build"
+  },
+  "include": [ "src/**/*" ]
+}

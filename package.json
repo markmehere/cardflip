@@ -1,0 +1,24 @@
+{
+  "name": "cardflip",
+  "version": "1.0.0",
+  "description": "Simple card flip for PIXI.js",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "cp node_modules/pixi-projection/dist/pixi-projection.js dist/pixi-projection.js && cp node_modules/pixi-layers/dist/pixi-layers.js dist/pixi-layers.js",
+    "build": "tsc && rollup --bundleConfigAsCjs --config rollup.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run prepare && npm run build && cd dist && python3 -m http.server"
+  },
+  "author": "Mark Pazolli",
+  "license": "MIT",
+  "dependencies": {
+    "pixi-layers": "0.3.1",
+    "pixi-projection": "0.3.15",
+    "pixi.js": "5.3.11"
+  },
+  "devDependencies": {
+    "rollup": "^3.5.0",
+    "typescript": "^4.9.3",
+    "typescript-bundle": "^1.0.18"
+  }
+}
