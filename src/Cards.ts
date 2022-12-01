@@ -18,7 +18,6 @@ export class Cards {
     this.shadowGroup = new Group(1, false);
     this.cardsGroup = new Group(2, (item) => {
       item.zOrder = item.parent.depth();
-      if (item.parent.depth() > 0.0001) console.log(item.getDepth());
       item.parent.checkFace();
     });
     this.cardsGroup.enableSort = true;

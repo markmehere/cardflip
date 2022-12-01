@@ -17,6 +17,15 @@ npm install
 npm start
 ```
 
+## Develop
+
+To develop using watch mode:
+
+```
+npm install
+npm run watch
+```
+
 ## License
 
 All code is under the MIT license, licensing for the assets is 
